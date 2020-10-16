@@ -1,0 +1,69 @@
+@import "heading.css";
+@import "paragraph.css";
+
+/*impacts all*/
+* {
+  font-family: "Arial Black" Gadget, sans-serif;
+}
+
+/*impacts all "div" type tags*/
+div * {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*class*/
+.sitelink {
+  font-family: Georgia, serif;
+}
+
+/*id*/
+#tonyquote {
+  font-family: "Lucidia Sans Unicode", "Lucida Grande", sans-serif;
+  color: black;
+}
+
+/*changes the class only inside the "p" tag*/
+p.sitelink {
+  font-family: "Palatino Linotype";
+  color: green;
+}
+
+/* target any span with this id*/
+span#tonyname {
+  font-family: "Times New Roman", Times, serif;
+  color: chartreuse;
+}
+
+/* target those tags within the id, the div which they are inside has this id*/
+#tutorials ol li {
+  color: purple;
+}
+
+#tutorials ul li {
+  color: goldenrod;
+}
+
+/* target the paragraph immediately after h3*/
+h3 + p {
+  font-style: italic;
+}
+
+/* target the link which is inside the paragraph immediately after h3*/
+h3 + p > a {
+  color: red;
+}
+
+/*target every single paragraph that has a class*/
+p[class] {
+  background-color: lightsalmon;
+}
+
+/*target every single paragraph that has an id*/
+p[id] {
+  background-color: yellow;
+}
+
+/**/
+*[alt~="nintendo"] {
+  background-color: orange;
+}

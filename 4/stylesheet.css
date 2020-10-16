@@ -1,0 +1,39 @@
+/*
+clip crops an element based on coordinates from the top left
+rect(top, right, bottom, left)
+*/
+
+div.finance-clip {
+  position: absolute;
+  width: 200px;
+  clip: rect(0px, 150px, 150px, 0px);
+}
+
+/* I shrink the size of the div so the image won't fit */
+
+div.finance-small {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+}
+
+/* With overflow visible the part of the image that doesn't fit in the div
+  shows anyway */
+
+div.overflow-visible {
+  top: 200px;
+  overflow: visible;
+}
+
+/* With overflow hidden the part of the image that doesn't fit in the div
+  is hidden */
+
+div.overflow-hidden {
+  top: 300px;
+  overflow: hidden;
+}
+
+div.overflow-scroll {
+  top: 400px;
+  overflow: scroll;
+}
