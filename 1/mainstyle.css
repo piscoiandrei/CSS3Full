@@ -63,7 +63,7 @@ p[id] {
   background-color: yellow;
 }
 
-/**/
+/*impacts all the alt attributes that are equal to "nintendo" */
 *[alt~="nintendo"] {
   background-color: orange;
 }
